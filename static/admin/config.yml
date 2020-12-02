@@ -26,7 +26,7 @@ collections:
         create: true
         slug: "{{slug}}"
         fields:
-          - {label: about, name: about, widget: object, fields: [{label: url, name: url, widget: string}]}
+          - {label: about, name: about, widget: object, fields: [{label: url, name: url, widget: string},{label: title, name: title, widget: string}]}
           - {label: "Weight", name: "weight", widget: "number"}
           - {label: "Body", name: "body", widget: "markdown"}
  
