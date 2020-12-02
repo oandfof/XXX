@@ -25,8 +25,7 @@ collections:
         file: "date/homepage.yml"
         fields:
           - {label: About, name: about, widget: object, fields: [{label: url, name: url}, {label: title, name: title}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: "Weight", name: "weight", widget: "number"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: product, name: name, widget: object, fields: [{label: url, name: url}, {label: title, name: title}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
 
       - name: "faq" 
         label: "faq"
