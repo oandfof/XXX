@@ -1,0 +1,107 @@
+{{ "<!-- navigation -->" | safeHTML }}
+<div class="side-header">
+<!-- HEADER LEFT -->
+<header id="header-left" class="header header-1 mobile-no-transparent no-transparent">
+   <div class="header-wrapper">
+   <div class="container-m-30 clearfix">
+      <div class="logo-row">
+         <!-- Logo start-->
+         <div class="logo-container-2">
+            <div class="logo-2">
+               <a class="clearfix" href="{{ site.BaseURL }}">
+               {{ with site.Params.logo}}
+               <img  class="logo-img" src="{{ . | absURL }}" alt="{{ site.Title }}">  <!-- width="{{site.Params.logo_width}}"-->
+               {{ else }}{{site.Title}}{{end}}
+               </a>
+            </div>
+         </div>
+         <!-- Logo end-->
+         <!-- BUTTON -->
+         <div class="menu-btn-respons-container">
+            <button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse"
+               data-target="#main-menu .navbar-collapse">
+            <span aria-hidden="true" class="icon_menu hamb-mob-icon"></span>
+            </button>
+         </div>
+      </div>
+   </div>
+   <!-- MAIN MENU CONTAINER -->
+   <div class="main-menu-container">
+   <div class="container-m-30 clearfix">
+   <!-- MAIN MENU -->
+   <div id="main-menu">
+      <div class="navbar navbar-default" role="navigation">
+         <!-- MAIN MENU LIST -->
+         <nav id="header-left-nav" class="collapse in collapsing navbar-collapse right-1024">
+            <ul class="nav navbar-nav">
+               <!-- MENU ITEM -->
+               <li class="current">
+                  <a href="#">
+                     <div class="main-menu-title">首頁</div>
+                  </a>
+               </li>
+               <!-- MENU ITEM -->
+               <li class="parent">
+                  <a href="#">
+                     <div class="main-menu-title">產品介紹</div>
+                  </a>
+                  <ul class="sub">
+                     <li class="parent">
+                        <a href="#">
+                           <div class="main-menu-title">產品分類</div>
+                        </a>
+                        <ul class="sub">
+                           <li><a href="#">產品項目</a></li>
+                           <li><a href="#">產品項目</a></li>
+                           <li><a href="#">產品項目</a></li>
+                           <li><a href="#">產品項目</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">產品分類</a></li>
+                     <li><a href="#">產品分類</a></li>
+                     <li><a href="#">產品分類</a></li>
+                  </ul>
+               </li>
+               {{ range site.Menus.main }}
+               <li>
+                  <a href="{{ .URL | absURL }}">
+					 <div class="main-menu-title">{{ .Name }}</div>
+				  </a>
+               </li>
+               {{ end }}
+            </ul>
+         </nav>
+               <!-- SEARCH FORM -->
+                    <form class="form-search faq-search-form hl-search hide-lg" action="page-search-results.html"
+                      method="get">
+                      <input type="text" name="q" class="hl-search-input" placeholder="請輸入搜尋關鍵字">
+                      <button class="" type="submit" title="Start Search">
+                        <span aria-hidden="true" class="icon_search"></span>
+                      </button>
+                    </form>
+
+                  </div>
+                </div>
+                <!-- END main-menu -->
+
+              </div>
+              <!-- END container-m-30 -->
+
+            </div>
+            <!-- END main-menu-container -->
+
+            <!-- SEARCH READ DOCUMENTATION -->
+            <ul class="cd-header-buttons">
+              <li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
+            </ul>
+            <div id="cd-search" class="cd-search">
+              <form class="form-search" id="searchForm" action="page-search-results.html" method="get">
+                <input type="text" value="" name="q" id="q" placeholder="請輸入搜尋關鍵字">
+              </form>
+            </div>
+
+          </div>
+          <!-- END header-wrapper -->
+</header>
+</div>		
+{{ "<!-- /navigation -->" | safeHTML }}

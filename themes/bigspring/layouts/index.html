@@ -1,0 +1,209 @@
+{{ define "main" }}
+<div class="relative">
+   <div class="rs-fullscr-container">
+      <div id="rs-fullwidth" class="tp-banner">
+         <ul>
+            <!-- SLIDE 1 -->
+            <li data-transition="zoomout" data-slotamount="1" data-masterspeed=""
+               data-thumb="images/index/about.png" data-saveperformance="on" data-title="IMAGINATION">
+               <!-- MAIN IMAGE -->
+               <img src="images/index/about.png" alt="slidebg2" data-lazyload="images/index/about.png"
+                  data-bgposition="right top" data-bgfit="cover" data-bgrepeat="no-repeat">
+               <!-- LAYERS -->
+               <!-- LAYER NR. 0 BG CAPTIONS -->
+               <div class="tp-caption rs-parallaxlevel-4 zoomout" data-x="left" data-y="center" data-speed="1300"
+                  data-start="200" data-easing="Power3.easeInOut" style="z-index: 0;">
+                  <div class="slider-bg-white-cap"></div>
+               </div>
+               <!--PARALLAX & OPACITY container -->
+               <div class="rs-parallaxlevel-4 opacity-scroll2">
+                  <!-- LAYER NR. 3 -->
+                  <div class="tp-caption center-0-478 white-black-63 sfb tp-resizeme" data-x="645" data-y="255"
+                     data-speed="900" data-start="1500" data-easing="Power3.easeInOut" data-splitin="none"
+                     data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                     style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">WELCOME
+                  </div>
+                  <!-- LAYER NR. 4 -->
+                  <div class="tp-caption dark-light-32 fs16-when-0-736 tp-left sfb tp-resizeme" data-x="650" data-y="330" data-speed="900" data-start="1500" data-easing="Power3.easeInOut" data-splitin="none"
+                     data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
+                     style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;">網站建置、系統開發、平面設計
+                  </div>
+               </div>
+            </li>
+            <!-- SLIDE 1 -->
+         </ul>
+      </div>
+   </div>
+   <!-- SCROLL ICON -->
+   <div class="local-scroll-cont">
+      <a href="#about" class="scroll-down smooth-scroll">
+         <div class="icon icon-arrows-down"></div>
+      </a>
+   </div>
+</div>
+<!-- FEATURES 7 -->
+<div id="about" class="page-section clearfix">
+   <div class="fes7-img-cont col-md-6 wow fadeInLeft">
+      <div class="fes7-img" style="background-image: url({{ site.Data.homepage.about.url | absURL }})"></div>
+   </div>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
+            <div class="heading-title wow fadeInUp">
+               <h3 class="mb-40">{{ site.Data.homepage.about.title}}</h3>
+            </div>
+            <p class="mb-60">
+               {{ site.Data.homepage.about.content}} 
+            </p>
+            <div class="row">
+               <div class="col-md-12 col-sm-12">
+                  <div class="fes7-box wow fadeIn">
+                     <div class="fes7-box-icon">
+                        <div class="icon icon-ecommerce-graph-increase"></div>
+                     </div>
+                     <h3>{{ site.Data.homepage.about.subtitle1}} </h3>
+                     <p>{{ site.Data.homepage.about.subcontent1}}</p>
+                  </div>
+               </div>
+               <div class="col-md-12 col-sm-12">
+                  <div class="fes7-box wow fadeIn" data-wow-delay="200ms">
+                     <div class="fes7-box-icon">
+                        <div class="icon icon-basic-calculator"></div>
+                     </div>
+                     <h3>{{ site.Data.homepage.about.subtitle2}}</h3>
+                     <p>{{ site.Data.homepage.about.subcontent1}}</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--end of row-->
+   </div>
+</div>
+<!-- CAROUSELS latest  -->
+<div class="page-section">
+   <div class="container-fluid mlr-50">
+      <div id="carousels" class="mb-100 bs-docs-section">
+         {{ with site.Data.homepage.latest }}
+         <div class="text-center heading-title wow fadeInUp">
+            <h3 class="mb-40">{{ site.Data.homepage.latest.title}}</h3>
+         </div>
+         <div class="row mb-30 wow fadeInUp">
+            <!-- main.js:785 item setting -->
+            <div class="owl-carousel owl-clients-nav owl-arrows-bg pb-30 ">
+               {{ range .latest_item}}
+               <div class="text-center">
+                  <a href="{{ .url | absURL }}">
+                     <div class="lightbox-item">
+                        <div class="port-img-overlay">
+                           <img class="port-main-img" src="{{ .src | absURL }}" alt="img">
+                        </div>
+                     </div>
+                  </a>
+                  <div class="port-title-cont">
+                     <h3><a href="{{ .url | absURL }}">{{ .name }}</a></h3>
+                  </div>
+               </div>
+               {{ end }}
+            </div>
+         </div>
+      </div>
+      {{ end }}
+   </div>
+</div>
+<!-- PORTFOLIO SECTION 1 -->
+<div class="page-section">
+   <div class="relative">
+      <!-- ITEMS GRID -->
+      <ul class="port-grid port-grid-3  display-hover-on-mobile clearfix masonry" id="items-grid">
+         {{ range site.Data.homepage.product }}
+         <!-- Item -->
+         <li role="button" class="port-item mix">
+            <a href="{{ .url | absURL }}">
+               <div class="port-img-overlay"><img class="port-main-img" src="{{ .src | absURL }}" alt="img"></div>
+            </a>
+            <a href="#">
+               <div class="port-overlay-cont">
+                  <div class="port-title-cont">
+                     <h3>{{ .name }}</h3>
+                     <span>{{ .subname }}</span>
+                  </div>
+               </div>
+            </a>
+         </li>
+         {{ end }}
+      </ul>
+   </div>
+</div>
+<!-- NEWS -->
+<div class="page-section">
+   <div class="container p-110-cont">
+      {{ with site.Data.homepage.news }}
+      <!-- CONTENT -->
+      <div class="blog-main-posts mlr-50">
+         <div class="text-center heading-title  wow fadeInUp">
+            <h3 class="mb-40"> {{site.Data.homepage.news.title}}</h3>
+         </div>
+         <div class="row">
+            <!-- Post Item -->
+            {{ range .news_item}}
+            <div class="col-md-6 wow fadeIn">
+               <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                     <!-- <div class="post-prev-img">
+                        <a href="#"><img src="images/index/about.png" alt="img"></a>
+                        </div> -->
+                     <a href="#">
+                        <div class="lightbox-item">
+                           <div class="port-img-overlay">
+                              <img class="port-main-img" src="{{ .src | absURL }}" alt="img">
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                     <div class="post-prev-title">
+                        <h3><a href="#">{{ .name }}</a></h3>
+                     </div>
+                     <div class="post-prev-info">
+                        {{ .title }}<span class="slash-divider"></span><span class="slash-divider">/</span><a
+                           href="#">{{.class}}</a>
+                     </div>
+                     <div class="post-prev-text">
+                        {{ .content }}
+                     </div>
+                     <div class="post-prev-more-cont clearfix">
+                        <div class="post-prev-more right">
+                           <a href="#" class="blog-more">READ MORE</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            {{ end }}
+         </div>
+      </div>
+      {{ end }}
+   </div>
+</div>
+<!-- link -->
+{{ if site.Data.homepage.link.enable }}
+{{ with site.Data.homepage.link }}
+<div class="page-section">
+   <div id="carousels" class="bs-docs-section">
+      <div class="text-center heading-title wow fadeInUp">
+         <h3 class="mb-40">{{ .title | markdownify }}</h3>
+      </div>
+      <div class="row mb-30">
+         <div class="owl-clients-no-auto owl-carousel">
+            {{ range .images }} 
+            <div class="text-center"><img src="{{ . | absURL }}" alt="client"></div>
+            {{ end }}
+         </div>
+      </div>
+   </div>
+</div>
+{{ end }}
+{{ end }}
+<!-- /link -->
+{{ end }}

@@ -1,0 +1,45 @@
+/* title */
+.heading-title h3{
+    position:relative;
+    display:inline-block;
+    font-weight: bold;
+    color: #A52321;
+    z-index: 10;
+}
+
+.heading-title h3::before{
+    content:'';
+    position: absolute;
+    top: -5px;
+    display: inline-block;
+    left: -19px;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border: rgba(165,35,33,.35) dotted 2px;
+    /* background: rgba(165,35,33,.15); */
+    /* background: #666; */
+    z-index: -1;
+    /* animation: circle 10s linear infinite; */
+ }
+ /* @keyframes circle {
+     0%{transform: rotate(0deg);}
+     100%{transform: rotate(360deg);}
+ } */
+
+
+ /* tips */
+a.blog-more, a.terms{
+    color: #666;
+}
+a:hover.blog-more, a:hover.terms{
+    color: #A52321;
+}
+
+/* index */
+.post-prev-title h3 a{
+    color: 666;
+}
+.post-prev-title h3 a:hover{
+    color: #A52321;
+}

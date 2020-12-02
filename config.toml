@@ -1,0 +1,200 @@
+######################## default configuration ####################
+baseURL = "http://examplesite.org/"
+title = "Bigspring Hugo"
+theme = "bigspring"
+languageName = "En"
+languageCode = "en-us"
+# post pagination
+paginate = "3"
+# post excerpt
+summaryLength = "15"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+############################# Plugins ##############################
+
+# CSS Plugins
+
+[[params.plugins.css]]
+link = "plugins/rs-plugin/css/settings.min.css"
+html_attributes ="media=\"screen\""
+[[params.plugins.css]]
+link = "plugins/css/bootstrap.min.css"
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700"
+[[params.plugins.css]]
+link = "plugins/css/icons-fonts.css"
+[[params.plugins.css]]
+link = "plugins/css/style.css"
+[[params.plugins.css]]
+link = "plugins/css/animate.min.css"
+[[params.plugins.css]]
+link = "plugins/css/content.css"
+[[params.plugins.css]]
+link = "plugins/css/custom.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/js/jquery-1.11.2.min.js"
+[[params.plugins.js]]
+link = "plugins/js/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/js/jquery.magnific-popup.min.js"
+[[params.plugins.js]]
+link = "plugins/js/isotope.pkgd.min.js"
+[[params.plugins.js]]
+link = "plugins/js/imagesloaded.pkgd.min.js"
+[[params.plugins.js]]
+link = "plugins/js/masonry.pkgd.min.js"
+[[params.plugins.js]]
+link = "plugins/js/jquery.countTo.js"
+[[params.plugins.js]]
+link = "plugins/js/jquery.appear.js"
+[[params.plugins.js]]
+link = "plugins/js/jquery.validate.min.js"
+[[params.plugins.js]]
+link = "plugins/js/contact-form-validation.min.js"
+[[params.plugins.js]]
+link = "plugins/js/owl.carousel.min.js"
+[[params.plugins.js]]
+link = "plugins/js/main.js"
+[[params.plugins.js]]
+link = "plugins/rs-plugin/js/jquery.themepunch.tools.min.js"
+[[params.plugins.js]]
+link = "plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"
+[[params.plugins.js]]
+link = "plugins/rs-plugin/js/jquery.themepunch.revolution-parallax.min.js"
+
+
+
+
+############################## navigation ###############################
+
+# main menu
+[[menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 1
+
+[[menu.main]]
+name = "Pricing"
+URL = "pricing"
+weight = 2
+
+[[menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 3
+
+[[menu.main]]
+name = "FAQ"
+URL = "faq"
+weight = 4
+
+# footer menu left
+[[menu.footer_left]]
+title = "2020 六月 10"
+name = "最新消息標題1"
+URL = "#"
+
+[[menu.footer_left]]
+title="2020 八月 16"
+name = "最新消息標題2"
+URL = "#"
+
+[[menu.footer_left]]
+title="2020 九月 7"
+name = "最新消息標題3"
+URL = "#"
+
+
+# footer menu middle
+[[menu.footer_middle]]
+name = "關於我們"
+URL = "#"
+
+[[menu.footer_middle]]
+name = "熱銷商品"
+URL = "#"
+
+[[menu.footer_middle]]
+name = "產品列表"
+URL = "#"
+
+[[menu.footer_middle]]
+name = "最新消息"
+URL = "#"
+
+[[menu.footer_middle]]
+name = "聯繫我們"
+URL = "#"
+
+# footer menu right
+[[menu.footer_right]]
+name = "service@gmail.com"
+URL = "privacy-policy"
+
+[[menu.footer_right]]
+name = "+886 91101111"
+URL = "terms-conditions"
+
+[[menu.footer_right]]
+name = "台中市豐原區"
+URL = "faq"
+
+#################### default parameters ################################
+[params]
+logo = "images/fake-logo-show.png"
+#logo_width = "200px"
+# Meta data
+description = "This is meta description"
+author = "Themefisher"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+
+########### footer content ##########
+footer_menu_left_title ="最新消息"
+footer_menu_middle_title = "分類選單"
+footer_menu_right_title = "聯絡我們"
+
+#footer_menu_left = "Company"
+Company_content = "公司簡介公司簡介公司簡介公司簡介公司簡介公司簡介公司簡介公司簡介"
+
+#footer_content = "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
+# copyright
+#copyright = "Design By [Themefisher](https://themefisher.com/) Develop By [Gethugothemes](https://gethugothemes.com/)"
+copyright = "Copyrights © 2020 All Rights Reserved by"
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation buttons
+[params.navigation_button]
+enable = true
+label = "Get Started"
+link = "contact"
+
+
+  
+############################# social site ########################
+[[params.social]]
+title = "facebook"
+icon = "facebook" # themify icon : https://themify.me/themify-icons
+url = "#"
+
+[[params.social]]
+title = "twitter"
+icon = "twitter" # themify icon : https://themify.me/themify-icons
+url = "#"
+
+
+[[params.social]]
+title = "linkedin"
+icon = "linkedin" # themify icon : https://themify.me/themify-icons
+url = "#"

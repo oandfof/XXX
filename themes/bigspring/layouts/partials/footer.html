@@ -1,0 +1,67 @@
+<footer id="footer1" class="page-section text-center pt-110-b-30-cont footer2-black">
+   <div class="container">
+      <div class="row mlr-50">
+         <div class="col-md-3 col-sm-3 widget">
+            <div class="logo-footer-cont">
+               {{ with site.Params.logo}}
+               <a href="index.html">
+                  <img  class="logo-footer" src="{{ . | absURL }}" alt="{{ site.Title }}">  <!-- width="{{site.Params.logo_width}}"-->
+               </a>
+               {{end}}
+            </div>
+            <div class="footer-2-text-cont">
+               <p>{{ site.Params.Company_content | markdownify }}</p>
+            </div>
+         </div>
+         <div class="col-md-3 col-sm-3 widget">
+            <h4>{{ site.Params.footer_menu_left_title | markdownify }}</h4>
+            <div id="post-list-footer">
+               {{ if site.Menus.footer_left }}
+               {{ range site.Menus.footer_left }}
+               <div class="post-prev-title">
+                  <h3><a class="a-text"  href="{{ .URL | absURL }}">{{ .Name }}</a></h3>
+               </div>
+               <div class="post-prev-info">
+                  {{ .Title }}
+               </div>
+               {{ end }}
+            </div>
+         </div>
+         {{ end }}
+         <div class="col-md-3 col-sm-3 widget">
+            <h4>{{ site.Params.footer_menu_middle_title | markdownify }}</h4>
+            {{ if site.Menus.footer_middle }}
+            <ul class="links-list a-text-cont" >
+               {{ range site.Menus.footer_middle }}
+               <li><a href="{{ .URL | absURL }}"><i class="fa fa-caret-right "></i>　{{ .Name }}</a></li>
+               {{ end }}
+            </ul>
+         </div>
+         {{ end }}
+         <div class="col-md-3 col-sm-3 widget">
+            <h4>{{ site.Params.footer_menu_right_title  | markdownify }}</h4>
+            {{ if site.Menus.footer_right }}
+            <ul class="links-list a-text-cont" >
+               {{ range site.Menus.footer_right }}
+               <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+               {{ end }}
+            </ul>
+         </div>
+         {{ end }}
+      </div>
+      <!-- Social Links -->
+      <div class="footer-soc-a">
+         {{ range .Site.Params.social }}
+         <a href="{{ .url }}" {{ .html_attributes | safeHTMLAttr }} target="_blank">
+         <i class="fa fa-{{ .icon}}"></i>
+         </a>
+         {{ end }}
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copy">
+         {{ site.Params.Copyright | markdownify }}
+         <a href="TEST.com" target="_blank">TEST.</a>
+         <a href="#" class="terms">網站聲明條款</a>
+      </div>
+   </div>
+</footer>
