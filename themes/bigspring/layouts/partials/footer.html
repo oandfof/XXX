@@ -5,7 +5,7 @@
             <div class="logo-footer-cont">
                {{ with site.Params.logo}}
                <a href="index.html">
-                  <img  class="logo-footer" src="{{ . | absURL }}" alt="{{ site.Title }}">  <!-- width="{{site.Params.logo_width}}"-->
+                  <img  class="logo-footer" src="{{ . | relURL }}" alt="{{ site.Title }}">  <!-- width="{{site.Params.logo_width}}"-->
                </a>
                {{end}}
             </div>
@@ -19,7 +19,7 @@
                {{ if site.Menus.footer_left }}
                {{ range site.Menus.footer_left }}
                <div class="post-prev-title">
-                  <h3><a class="a-text"  href="{{ .URL | absURL }}">{{ .Name }}</a></h3>
+                  <h3><a class="a-text"  href="{{ .URL | relURL }}">{{ .Name }}</a></h3>
                </div>
                <div class="post-prev-info">
                   {{ .Title }}
@@ -33,7 +33,7 @@
             {{ if site.Menus.footer_middle }}
             <ul class="links-list a-text-cont" >
                {{ range site.Menus.footer_middle }}
-               <li><a href="{{ .URL | absURL }}"><i class="fa fa-caret-right "></i>　{{ .Name }}</a></li>
+               <li><a href="{{ .URL | relURL }}"><i class="fa fa-caret-right "></i>　{{ .Name }}</a></li>
                {{ end }}
             </ul>
          </div>
@@ -43,7 +43,7 @@
             {{ if site.Menus.footer_right }}
             <ul class="links-list a-text-cont" >
                {{ range site.Menus.footer_right }}
-               <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+               <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
                {{ end }}
             </ul>
          </div>

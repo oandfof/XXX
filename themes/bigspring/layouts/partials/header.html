@@ -64,7 +64,7 @@
                </li>
                {{ range site.Menus.main }}
                <li>
-                  <a href="{{ .URL | absURL }}">
+                  <a href="{{ .URL | relURL }}">
 					 <div class="main-menu-title">{{ .Name }}</div>
 				  </a>
                </li>
