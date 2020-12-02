@@ -25,7 +25,7 @@ collections:
         file: "data/homepage.yml"
         fields:
           - {label: About, name: about, widget: object, fields: [{label: url, name: url}, {label: title, name: title}, {label: content, name: content, widget: string},{label: subtitle1, name: subtitle1, widget: string},{label: subcontent1, name: subcontent1, widget: string},{label: subtitle2, name: subtitle2, widget: string},{label: subcontent2, name: subcontent2, widget: string}]}
-          - {label: latest, name: latest, widget: object, fields: [{label: title, name: title, widget: string, fields: [{label: latest_item, name: latest_item}]}]}
+          - {label: latest, name: latest, widget: object, fields: [{label: title, name: title, widget: string, fields: [{label: latest_item, name: latest_item , widget: string}]}]}
           #- {label: latest, name: latest, widget: object, fields: [{label: title, name: title, widget: string}, fields: [{label: latest_item, name: latest_item}]]}
 
       - name: "faq" 
