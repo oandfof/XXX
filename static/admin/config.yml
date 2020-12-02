@@ -22,7 +22,7 @@ collections:
     files:
       - name: "homepage" 
         label: "Home Page"
-        file: "date/homepage.yml"
+        file: "data/homepage.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: content, name: content, widget: string}
