@@ -32,7 +32,7 @@ collections:
 
       - name: "faq" 
         label: "faq"
-        file:content/_index.md"
+        file: "content/faq/_index.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
