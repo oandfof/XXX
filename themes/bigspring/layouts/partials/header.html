@@ -10,7 +10,7 @@
             <div class="logo-2">
                <a class="clearfix" href="{{ site.BaseURL }}">
                {{ with site.Params.logo}}
-               <img  class="logo-img" src="{{ . | absURL }}" alt="{{ site.Title }}">  <!-- width="{{site.Params.logo_width}}"-->
+               <img  class="logo-img" src="{{ . | relURL }}" alt="{{ site.Title }}">  <!-- width="{{site.Params.logo_width}}"-->
                {{ else }}{{site.Title}}{{end}}
                </a>
             </div>
