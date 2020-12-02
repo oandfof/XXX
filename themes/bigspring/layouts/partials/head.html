@@ -11,7 +11,7 @@
    <!--  載入所有CSS themes\bigspring\static\plugins -->
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range site.Params.plugins.css }}
-  <link rel="stylesheet" href="{{ .link | absURL }}" {{ .html_attributes | safeHTMLAttr }}  >
+  <link rel="stylesheet" href="{{ .link | relURL }}" {{ .html_attributes | safeHTMLAttr }}  >
   {{ end }}
 
   {{ with .Params.Image }}
