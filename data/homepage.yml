@@ -13,23 +13,23 @@ about:
 latest:
     title: "LATEST / 最新產品"
     latest_item :
-         - name : "產品名稱" 
+         - name : "產品名稱1" 
            url  : "#" 
            src  : "images/index/about.png" 
     
-         - name : "產品名稱" 
+         - name : "產品名稱2" 
            url  : "#" 
            src  : "images/index/about.png" 
         
-         - name : "產品名稱" 
+         - name : "產品名稱3" 
            url  : "#" 
            src  : "images/index/about.png" 
 
-         - name : "產品名稱" 
+         - name : "產品名稱4" 
            url  : "#" 
            src  : "images/index/about.png" 
 
-         - name : "產品名稱" 
+         - name : "產品名稱5" 
            url  : "#" 
            src  : "images/index/about.png" 
 
@@ -87,11 +87,11 @@ link:
   enable : true
   title : "LINKS / 快速連結"
   images:
-      - "images/clients/1.png"
-      - "images/clients/2.png"
-      - "images/clients/3.png"
-      - "images/clients/4.png"
-      - "images/clients/5.png"
-      - "images/clients/6.png"
-      - "images/clients/7.png"
+      - src  :"images/clients/1.png"
+      - src  :"images/clients/2.png"
+      - src  :"images/clients/3.png"
+      - src  :"images/clients/4.png"
+      - src  :"images/clients/5.png"
+      - src  :"images/clients/6.png"
+      - src  :"images/clients/7.png"
      
