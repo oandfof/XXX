@@ -1,0 +1,107 @@
+---
+label: '123'
+hide_body: true
+fields:
+- type: field_group
+  name: about
+  label: about
+  fields:
+  - type: file
+    name: url
+    label: url
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: content
+    label: content
+  - type: text
+    name: subtitle1
+    label: subtitle1
+  - type: text
+    name: subcontent1
+    label: subcontent1
+  - type: text
+    name: subtitle2
+    label: subtitle2
+  - type: text
+    name: subcontent2
+    label: subcontent2
+- type: field_group
+  name: latest
+  label: latest
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: field_group_list
+    name: latest_item
+    label: latest_item
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: url
+      label: url
+    - type: file
+      name: src
+      label: src
+- type: field_group_list
+  name: product
+  label: product
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: subname
+    label: subname
+  - type: text
+    name: url
+    label: url
+  - type: file
+    name: src
+    label: src
+- type: field_group
+  name: news
+  label: news
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: field_group_list
+    name: news_item
+    label: news_item
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: content
+      label: content
+    - type: text
+      name: url
+      label: url
+    - type: file
+      name: src
+      label: src
+    - type: text
+      name: class
+      label: class
+- type: field_group
+  name: link
+  label: link
+  fields:
+  - type: boolean
+    name: enable
+    label: enable
+  - type: text
+    name: title
+    label: title
+  - type: list
+    name: images
+    label: images
