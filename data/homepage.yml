@@ -87,11 +87,11 @@ link:
   enable : true
   title : "LINKS / 快速連結"
   images:
-      - src  :"images/clients/1.png"
-      - src  :"images/clients/2.png"
-      - src  :"images/clients/3.png"
-      - src  :"images/clients/4.png"
-      - src  :"images/clients/5.png"
-      - src  :"images/clients/6.png"
-      - src  :"images/clients/7.png"
+      -name : "產品名稱"  
+       src  :"images/clients/1.png"
+      -name : "產品名稱"  
+       src  :"images/clients/2.png"
+      -name : "產品名稱"  
+       src  :"images/clients/3.png"
+
      
