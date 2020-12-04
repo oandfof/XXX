@@ -105,5 +105,3 @@ fields:
   - type: list
     name: images
     label: images
-pages:
-- data/test.yml
