@@ -1,0 +1,27 @@
+---
+about:
+  url: ''
+  title: ''
+  content: ''
+  subtitle1: ''
+  subcontent1: ''
+  subtitle2: ''
+  subcontent2: ''
+latest:
+  title: ''
+  latest_item:
+  - name: "1111"
+    url: "11"
+    src: "/images/owl-carousel/AjaxLoader.gif"
+product:
+- name: "111"
+  subname: "111"
+  url: "11"
+  src: "/images/index/about.jpg"
+news:
+  title: ''
+  news_item: []
+link:
+  enable: false
+  title: ''
+  images: []
