@@ -105,3 +105,5 @@ fields:
   - type: list
     name: images
     label: images
+pages:
+- data/12311.yml

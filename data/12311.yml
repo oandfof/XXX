@@ -1,0 +1,24 @@
+---
+about:
+  url: "/images/index/about.jpg"
+  title: "123"
+  content: "123"
+  subtitle1: "11"
+  subcontent1: "111"
+  subtitle2: "111"
+  subcontent2: "111"
+latest:
+  title: ''
+  latest_item: []
+product:
+- name: "123"
+  subname: qqq
+  url: "#"
+  src: "/images/index/about.jpg"
+news:
+  title: ''
+  news_item: []
+link:
+  enable: false
+  title: ''
+  images: []
