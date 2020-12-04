@@ -1,4 +1,14 @@
 ---
 label: beijing
 hide_body: false
-fields: []
+fields:
+- name: '123'
+  type: text
+  config:
+    required: false
+  label: '123'
+  description: '222'
+- name: tttt
+  type: image_gallery
+  config: {}
+  label: tttt
