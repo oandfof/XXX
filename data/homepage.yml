@@ -1,97 +1,78 @@
-####################### about #########################
+---
 about:
-   url: "images/index/about.jpg" 
-   title: "ABOUT / 關於我們"
-   content : "我們是做事用心、讓您安心的團隊 我們是專業網站設計建置及系統開發的服務商"
-   subtitle1 : "共同成長"
-   subcontent1 : "恆洋數位秉持與客戶一起成長的理念，您的需求和想法，將能透過我們的設計和規劃來實現"
-   subtitle2 : "專業評估"
-   subcontent2 : "有任何關於網路行銷、系統開發、網站建置、購物網站、品牌設計等相關需求，
-                  我們都提供線上免費諮詢，或是專人當面討論，必能給您最中肯的建議進行評估！"
-####################### latest #########################
-
+  url: images/index/about.jpg
+  title: ABOUT / 關於我們
+  content: 我們是做事用心、讓您安心的團隊 我們是專業網站設計建置及系統開發的服務商。
+  subtitle1: 共同成長
+  subcontent1: 恆洋數位秉持與客戶一起成長的理念，您的需求和想法，將能透過我們的設計和規劃來實現
+  subtitle2: 專業評估
+  subcontent2: 有任何關於網路行銷、系統開發、網站建置、購物網站、品牌設計等相關需求， 我們都提供線上免費諮詢，或是專人當面討論，必能給您最中肯的建議進行評估！
 latest:
-    title: "LATEST / 最新產品"
-    latest_item :
-         - name : "產品名稱1" 
-           url  : "#" 
-           src  : "images/index/about.png" 
-    
-         - name : "產品名稱2" 
-           url  : "#" 
-           src  : "images/index/about.png" 
-        
-         - name : "產品名稱3" 
-           url  : "#" 
-           src  : "images/index/about.png" 
-
-         - name : "產品名稱4" 
-           url  : "#" 
-           src  : "images/index/about.png" 
-
-         - name : "產品名稱5" 
-           url  : "#" 
-           src  : "images/index/about.png" 
-
+  title: LATEST / 最新產品
+  latest_item:
+  - name: 產品名稱1
+    url: "#"
+    src: images/index/about.png
+  - name: 產品名稱2
+    url: "#"
+    src: images/index/about.png
+  - name: 產品名稱3
+    url: "#"
+    src: images/index/about.png
+  - name: 產品名稱4
+    url: "#"
+    src: images/index/about.png
+  - name: 產品名稱5
+    url: "#"
+    src: images/index/about.png
 product:
-     - name : "產品名稱" 
-       subname : "產品分類"
-       url  : "#" 
-       src  : "images/index/about.png" 
-     
-     - name : "產品名稱" 
-       subname : "產品分類"
-       url  : "#" 
-       src  : "images/index/about.png" 
-     
-     - name : "產品名稱" 
-       subname : "產品分類"
-       url  : "#" 
-       src  : "images/index/about.png" 
-      
-     - name : "產品名稱" 
-       subname : "產品分類"
-       url  : "#" 
-       src  : "images/index/about.png" 
-     
-     - name : "產品名稱" 
-       subname : "產品分類"
-       url  : "#" 
-       src  : "images/index/about.png" 
-     
-     - name : "產品名稱" 
-       subname : "產品分類"
-       url  : "#" 
-       src  : "images/index/about.png" 
-       
-news : 
-     title: "NEWS / 最新消息"
-     news_item :
-         - name : "最新消息標題" 
-           title :  "2020 九月 10" 
-           content: "文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容
-                        文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容"
-           url  : "#" 
-           src  : "images/index/about.png" 
-           class : "文章分類"
-           
-         - name : "最新消息標題" 
-           title :  "2020 九月 10" 
-           content: "文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容
-                        文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容"
-           url  : "#" 
-           src  : "images/index/about.png" 
-           class : "文章分類"
-
+- name: 產品名稱
+  subname: 產品分類
+  url: "#"
+  src: images/index/about.png
+- name: 產品名稱
+  subname: 產品分類
+  url: "#"
+  src: images/index/about.png
+- name: 產品名稱
+  subname: 產品分類
+  url: "#"
+  src: images/index/about.png
+- name: 產品名稱
+  subname: 產品分類
+  url: "#"
+  src: images/index/about.png
+- name: 產品名稱
+  subname: 產品分類
+  url: "#"
+  src: images/index/about.png
+- name: 產品名稱
+  subname: 產品分類
+  url: "#"
+  src: images/index/about.png
+news:
+  title: NEWS / 最新消息
+  news_item:
+  - name: 最新消息標題
+    title: 2020 九月 10
+    content: 文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容 文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容
+    url: "#"
+    src: images/index/about.png
+    class: 文章分類
+  - name: 最新消息標題
+    title: 2020 九月 10
+    content: 文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容 文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容文章內容
+    url: "#"
+    src: images/index/about.png
+    class: 文章分類
 link:
-  enable : true
-  title : "LINKS / 快速連結"
+  enable: true
+  title: LINKS / 快速連結
   images:
-      - src  :"images/clients/1.png"
-      - src  :"images/clients/2.png"
-      - src  :"images/clients/3.png"
-      - src  :"images/clients/4.png"
-      - src  :"images/clients/5.png"
-      - src  :"images/clients/6.png"
-      - src  :"images/clients/7.png"
-     
+  - src  :"images/clients/1.png"
+  - src  :"images/clients/2.png"
+  - src  :"images/clients/3.png"
+  - src  :"images/clients/4.png"
+  - src  :"images/clients/5.png"
+  - src  :"images/clients/6.png"
+  - src  :"images/clients/7.png"
