@@ -1,6 +1,6 @@
 ---
 about:
-  url: images/index/about.jpg
+  url: "images/index/about.jpg"
   title: ABOUT / 關於我們
   content: 我們是做事用心、讓您安心的團隊 我們是專業網站設計建置及系統開發的服務商。
   subtitle1: 共同成長
@@ -12,10 +12,10 @@ latest:
   latest_item:
   - name: 產品名稱1
     url: "#"
-    src: images/index/about.png
+    src: "images/index/about.png"
   - name: 產品名稱2
     url: "#"
-    src: images/index/about.png
+    src: "images/index/about.png"
   - name: 產品名稱3
     url: "#"
     src: images/index/about.png
